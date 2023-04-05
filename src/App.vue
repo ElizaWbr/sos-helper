@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-app>
+    <div v-if="$route.path != '/cadastrar' && 
+      $route.path != '/login' && 
+      $route.path != '/recuperarsenha' && 
+      $route.path != '/adicionardadospessoais' && 
+      $route.path != '/adicionardadosendereco' && 
+      $route.path != '/adicionardadosmedicos' && 
+      $route.path != '/adicionardadoscontato'">
+      <NavBarComponent />
+    </div>
+    <v-main class="app-background-color">
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import firebase from 'firebase/compat/app';
+import NavBarComponent from '@/components/NavBarComponent.vue';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data: () => ({
+    //
+  }),
+  components: { 
+    NavBarComponent 
+  },
+  methods:{
+    LogOut: function() {
+      firebase.auth().signOut().then(() => {
+        this.$router.replace('login')
+      })
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
