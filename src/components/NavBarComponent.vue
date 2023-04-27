@@ -12,7 +12,7 @@
     </v-app-bar>
     <v-navigation-drawer
       v-model="drawer"
-      class="app-bar"
+      class="app-bar app-nav-bar"
       temporary
     >
       <v-list

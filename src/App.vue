@@ -1,5 +1,8 @@
 <template>
-  <v-app>
+  <div class="cellphone-bottom-top d-flex align-center justify-center" style="top: 0px">
+    <div class="camera-circle"></div>
+  </div>
+  <v-app class="background-size">
     <div v-if="$route.path != '/cadastrar' && 
       $route.path != '/login' && 
       $route.path != '/recuperarsenha' && 
@@ -9,10 +12,11 @@
       $route.path != '/adicionardadoscontato'">
       <NavBarComponent />
     </div>
-    <v-main class="app-background-color">
+    <v-main class="app-background-color layout-bottom">
       <router-view />
     </v-main>
   </v-app>
+  <div class="cellphone-bottom-top" style="bottom: 0px"></div>
 </template>
 
 <script>

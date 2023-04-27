@@ -1,21 +1,25 @@
 /* APP */
-.texto-h3-paginas{
+.texto-h3-paginas {
     padding: 0px 0px 0px 0px;
     font-family: 'Bitter ExtraBold' !important;
-    color:#a80b29;
+    color: #a80b29;
     font-weight: 900;
     font-size: 1.5rem !important;
 }
-.app-background-color{
+
+.app-background-color {
     background-color: #ebe7e0;
 }
-.full-width{
+
+.full-width {
     width: 100%;
 }
-.full-height{
+
+.full-height {
     height: 100%;
 }
-.login-card{
+
+.login-card {
     height: 100%;
     display: flex !important;
     flex-direction: column !important;
@@ -24,103 +28,121 @@
     border-radius: 0px !important;
     background-color: #ebe7e0;
 }
-.title-white-space-normal{
+
+.title-white-space-normal {
     white-space: normal !important;
 }
-.logo-primeiro{
+
+.logo-primeiro {
     color: #a80b29;
 }
-.logo-segundo{
+
+.logo-segundo {
     color: black;
 }
+
 /* /APP */
 
 /* BOTÕES */
-.botao-salvar{
+.botao-salvar {
     background-color: #a80b29;
-    color: #fff !important; 
+    color: #fff !important;
     font-size: 1rem;
     font-family: 'Bitter ExtraBold' !important;
     font-weight: 900;
     width: 100%;
 }
-.botao-delete{
+
+.botao-delete {
     font-family: 'Bitter ExtraBold' !important;
     font-weight: 900;
     width: 100%;
     font-size: 1rem !important;
     color: #a80b29;
 }
-.botao-certeza-sim{
+
+.botao-certeza-sim {
     font-family: 'Bitter ExtraBold' !important;
     font-weight: 900;
     color: #a80b29;
     width: 50%;
 }
-.botao-certeza-nao{
+
+.botao-certeza-nao {
     font-family: 'Bitter ExtraBold' !important;
     font-weight: 900;
     background-color: #a80b29;
     color: #fff;
     width: 50%;
 }
-.text-font-botao{
+
+.text-font-botao {
     font-family: 'Bitter ExtraBold' !important;
     font-weight: 900;
 }
-.botao-login{
+
+.botao-login {
     background-color: #a80b29;
-    color: #fff !important; 
+    color: #fff !important;
     font-size: 1rem;
     width: 100%;
 }
-.btn-actions{
+
+.btn-actions {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.botao-home{
+
+.botao-home {
     background-color: #a80b29;
-    color: #fff !important; 
+    color: #fff !important;
     font-size: 1.2rem !important;
     width: 100%;
     font-family: 'Bitter ExtraBold';
     height: 20% !important;
 }
-.botao-pesquisar{
+
+.botao-pesquisar {
     height: 56px !important;
     min-width: 35% !important;
-  }
+}
+
 /* /BOTÕES */
 
 /* CARD */
-.cardsubtitle{
+.cardsubtitle {
     margin-bottom: 12px;
     display: flex !important;
     justify-content: center;
     position: relative;
-      
 }
-.card-text{
+
+.card-text {
     padding: 16px 16px 4px 16px !important;
 }
-.v-card-subtitle{
+
+.v-card-subtitle {
     flex: auto !important;
     white-space: normal !important;
 }
+
 /* /CARD */
 
 /* DIV */
-.dividida-grande{
+.dividida-grande {
     max-width: 65%;
 }
-.dividida-pequena{
+
+.dividida-pequena {
     max-width: 35%;
 }
-.div-dividida{
+
+.div-dividida {
     display: flex;
     justify-content: space-between;
 }
+
 /* /DIV */
 
 /* FONTES */
@@ -128,15 +150,17 @@
     font-family: 'Roboto Slab ExtraBold';
     font-weight: 900 !important;
 } */
-.fonte{
+.fonte {
     font-family: 'Bitter ExtraBold';
     font-weight: 900 !important;
 }
-.fonte-regular{
+
+.fonte-regular {
     font-family: 'Bitter Regular' !important;
     font-weight: 400;
     font-style: normal;
 }
+
 /* /FONTES */
 
 /* HOME */
@@ -145,14 +169,15 @@
 
 
 /* NAVBAR */
-.app-bar{
+.app-bar {
     background-color: #fafafa !important;
 }
-.navigation-list-title{
+
+.navigation-list-title {
     font-size: 1.1rem !important;
 }
-/* /NAVBAR */
 
+/* /NAVBAR */
 
 /* FONTE */
 @font-face {
@@ -161,6 +186,7 @@
     font-weight: 900;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Bitter Regular';
     src: url('@/fonts/Bitter/Bitter-Regular.ttf') format('truetype');
@@ -168,5 +194,95 @@
     font-style: normal;
 }
 
+@media (min-width: 440px) {
 
+    /* APP */
+    .v-application {
+        min-height: 90vh;
+        max-height: 90vh;
+    }
 
+    .layout-bottom {
+        --v-layout-bottom: 5vh !important;
+    }
+
+    .login-card {
+        margin-bottom: 40px;
+    }
+
+    /* /APP */
+
+    /* CELULAR */
+    .cellphone-left {
+        height: 100vh;
+        width: 15px;
+        background-color: black;
+        position: fixed;
+        left: calc(50% - 150px - 15px);
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        z-index: 1006;
+    }
+
+    .cellphone-right {
+        height: 100vh;
+        width: 15px;
+        background-color: black;
+        position: fixed;
+        right: calc(50% - 150px - 15px);
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .cellphone-bottom-top {
+        height: 5vh;
+        background-color: black;
+        position: fixed;
+        width: 300px;
+        z-index: 1007;
+    }
+
+    .camera-circle {
+        height: 15px;
+        width: 15px;
+        border-radius: 25px;
+        background-color: #fafafa;
+    }
+
+    .background-size {
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    /* /CELULAR */
+
+    .body_style {
+        height: 100vh;
+        background: #fafafa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hide-navbar-box {
+        background-color: #fafafa;
+        width: calc(50% - 150px - 15px);
+        height: 100vh;
+        position: fixed;
+        left: 0px;
+        z-index: 1005;
+    }
+
+    /* NAVBAR */
+    .app-bar {
+        width: 300px !important;
+        top: 5vh !important;
+        left: calc(50% - 150px) !important;
+    }
+
+    .app-nav-bar {
+        top: calc(5vh + 64px) !important;
+    }
+
+    /* /NAVBAR */
+}
